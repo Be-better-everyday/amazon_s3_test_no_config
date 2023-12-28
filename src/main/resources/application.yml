@@ -1,0 +1,9 @@
+#  https://viblo.asia/p/upload-file-len-amazon-s3-su-dung-java-spring-boot-E375zQadlGW
+amazonProperties:
+  endpointUrl: https://s3.ap-southeast-1.amazonaws.com
+  accessKey: ${AWS_ASSESS_KEY}
+  secretKey: ${AWS_SECRET_KEY}
+  bucketName: ${AWS_BUCKET_NAME}
+
+# End config source "Viblo"
+
