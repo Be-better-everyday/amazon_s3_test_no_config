@@ -106,8 +106,8 @@ public class AmazonClient {
                 new GeneratePresignedUrlRequest(bucketName, objecKey)
                         .withMethod(HttpMethod.GET)
                         .withExpiration(expiration);
-        generatePresignedUrlRequest.addRequestParameter("response-content-disposition", "inline");
-        generatePresignedUrlRequest.addRequestParameter("X-Amz-Security-Token", "YourSecurityToken"); // Replace with the actual security token
+//        generatePresignedUrlRequest.addRequestParameter("response-content-disposition", "inline");
+//        generatePresignedUrlRequest.addRequestParameter("X-Amz-Security-Token", "YourSecurityToken"); // Replace with the actual security token
 
         URL url = s3client.generatePresignedUrl(generatePresignedUrlRequest);
         System.out.println("Pre-Signed URL: " + url.toString());
